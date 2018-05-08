@@ -5,7 +5,7 @@ import Router from 'vue-router';
 import Home from '../views/Home';
 import Events from '../views/Events';
 import Teams from '../views/Teams';
-
+import BoardGames from '../views/BoardGames';
 Vue.use(Router);
 
 export default new Router({
@@ -25,6 +25,13 @@ export default new Router({
       path: '/teams',
       name: 'Teams',
       component: Teams
+    },
+    {
+      path: '/board-games',
+      name: 'BoardGames',
+      component: BoardGames
     }
+
+
   ]
 });
