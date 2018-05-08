@@ -1,6 +1,9 @@
 <template>
-<div class="">
+<div>
 	<top-section title="Carroms"></top-section>
+	<div class="board-games-description">
+		
+	</div>
 </div>
 </template>
 

@@ -1,6 +1,9 @@
 <template>
 <div class="top-header">
-	<p class="top-header-title">{{title}}</p>
+	<div>
+		<p class="top-header-title">{{title}}</p>	
+	</div>
+	
 </div>
 </template>
 <script>
@@ -21,7 +24,7 @@ export default {
 .top-header-title{
 	margin: 0;
     text-align: center;
-    padding-top: 15vh;
+    padding-top: 10vh;
     font-size: 100px;
     font-weight: 800;
     color: #feffe3;
