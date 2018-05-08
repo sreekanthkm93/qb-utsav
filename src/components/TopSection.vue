@@ -15,9 +15,9 @@ export default {
 
 <style scoped>
 .top-header{
-    height: 30vh;
+    height: 40vh;
     background: url("../assets/carroms.jpg");
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: center; 
 }
 

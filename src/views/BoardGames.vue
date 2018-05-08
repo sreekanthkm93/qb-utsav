@@ -2,7 +2,8 @@
 <div>
 	<top-section title="Carroms"></top-section>
 	<div class="board-games-description">
-		
+		<div>TABS</div>
+		<div>458645</div>
 	</div>
 </div>
 </template>
