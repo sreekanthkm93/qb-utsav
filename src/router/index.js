@@ -1,15 +1,30 @@
-import Vue from 'vue'
-import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+'use strict';
 
-Vue.use(Router)
+import Vue from 'vue';
+import Router from 'vue-router';
+import Home from '../views/Home';
+import Events from '../views/Events';
+import Teams from '../views/Teams';
+
+Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/events',
+      name: 'Events',
+      component: Events
+    },
+    {
+      path: '/teams',
+      name: 'Teams',
+      component: Teams
     }
   ]
-})
+});
