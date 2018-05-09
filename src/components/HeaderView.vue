@@ -1,17 +1,17 @@
 <template>
-  <!-- START PRELOADER -->  
+  <!-- START PRELOADER -->
   <div class="navbar navbar-default navbar-fixed-top menu-top">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-            <a href="index.html" class="navbar-brand">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
               <img src="../assets/logo.png" alt="logo">
             </a>
           </div>
@@ -30,7 +30,9 @@
                   <a class="page-scroll" href="#process">Gallery</a>
                 </li>
                 <li>
-                  <a class="page-scroll" href="#work">Timeline</a>
+                  <a class="page-scroll">
+                    <router-link :to="'leaderBoard'">Leader Board</router-link>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -44,13 +46,13 @@
 
 <script>
   export default {
-    name: "Header"
+    name: 'Header'
   };
 </script>
 
 <style scoped>
   .navbar-default {
-    background:  none repeat scroll 0 0;
+    background: none repeat scroll 0 0;
     border: medium none;
     border-radius: 0;
     margin-bottom: 0;
@@ -60,77 +62,128 @@
     position: fixed;
     overflow: hidden;
   }
-  .navbar-default .navbar-nav>.active>a,
-  .navbar-default .navbar-nav>.active>a:hover,
-  .navbar-default .navbar-nav>.active>a:focus {
-      color: #fff !important;
-      background-color: transparent;
+
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff !important;
+    background-color: transparent;
   }
-  .navbar-default .navbar-nav>.open>a,
-  .navbar-default .navbar-nav>.open>a:hover,
-  .navbar-default .navbar-nav>.open>a:focus {
-      color: #fff !important;
-      background-color: transparent;
+
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #fff !important;
+    background-color: transparent;
   }
-  .navbar-brand { padding: 0px; }
-  .navbar-brand img { width: 170px; }
+
+  .navbar-brand {
+    padding: 0px;
+  }
+
+  .navbar-brand img {
+    width: 170px;
+  }
+
   .navbar-default .navbar-collapse,
-  .navbar-default .navbar-form { border-color: #fff }
-  @media only screen and (max-width:768px) { 
-  .navbar-brand {height: 130px}
-  .navbar-brand img {margin-left:10px; }
+  .navbar-default .navbar-form {
+    border-color: #fff
   }
+
+  @media only screen and (max-width: 768px) {
+    .navbar-brand {
+      height: 130px
+    }
+
+    .navbar-brand img {
+      margin-left: 10px;
+    }
+  }
+
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  border-color: #222;
-  margin-top: 0px;
+    border-color: #222;
+    margin-top: 0px;
   }
-  @media only screen and (max-width:480px) { 
-  .navbar-default .navbar-collapse, .navbar-default .navbar-form {margin-top: 10px;}
+
+  @media only screen and (max-width: 480px) {
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+      margin-top: 10px;
+    }
   }
+
   .menu-top li a {
-      color: #4d4d4d !important;
-      font-size: 16px;
-      font-weight: 600;
-      text-transform: uppercase;
+    color: #4d4d4d !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
   }
-  .menu-top li a:hover { color: #292929!important;}
-  @media only screen and (max-width:768px) { 
-      .navbar-default .navbar-nav > li > a {
-          margin-top: 10px;
-          padding: 8px;
-      }
+
+  .menu-top li a:hover {
+    color: #292929 !important;
   }
-  @media only screen and (max-width:480px) { 
-      .menu-top { background-color: #222;position: fixed;
-  overflow: hidden; }
-      .navbar-default .navbar-nav > li > a { color: #fff  !important }
+
+  @media only screen and (max-width: 768px) {
+    .navbar-default .navbar-nav > li > a {
+      margin-top: 10px;
+      padding: 8px;
+    }
   }
-  .navbar-default.menu-shrink {
+
+  @media only screen and (max-width: 480px) {
+    .menu-top {
       background-color: #222;
-      box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
-      padding: 10px 0;
-      width: 100%;
+      position: fixed;
+      overflow: hidden;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+      color: #fff !important
+    }
   }
-  @media only screen and (max-width:480px) { 
-      .menu-top {
-          color: #fff !important;
-          margin-left: 0px;
-      }
+
+  .navbar-default.menu-shrink {
+    background-color: #222;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    width: 100%;
   }
+
+  @media only screen and (max-width: 480px) {
+    .menu-top {
+      color: #fff !important;
+      margin-left: 0px;
+    }
+  }
+
   .scrollable-menu {
-      height: auto;
-      max-height: 200px;
-      overflow-x: hidden;
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
   }
-  .navbar-default.menu-shrink li a { color: #fff !important }
-  .navbar-default.menu-shrink li a:hover { color: #fff !important }
-  .navbar-default .navbar-toggle { background: #fff none repeat scroll 0 0 }
+
+  .navbar-default.menu-shrink li a {
+    color: #fff !important
+  }
+
+  .navbar-default.menu-shrink li a:hover {
+    color: #fff !important
+  }
+
+  .navbar-default .navbar-toggle {
+    background: #fff none repeat scroll 0 0
+  }
+
   .navbar-default .navbar-toggle:hover,
-  .navbar-default .navbar-toggle:focus { background-color: #fff }
-  .navbar-default .navbar-toggle .icon-bar { background-color: #f9461d } 
+  .navbar-default .navbar-toggle:focus {
+    background-color: #fff
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #f9461d
+  }
 
   body {
-      min-height: 1800px;
-      background-color: #ffffff
+    min-height: 1800px;
+    background-color: #ffffff
   }
 </style>

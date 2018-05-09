@@ -5,13 +5,15 @@ import App from './App';
 import router from './router';
 import store from './store';
 import ApiService from './common/api.service';
+import Chart from 'chart.js';
+import VueChartkick from 'vue-chartkick';
 import jQuery from 'jquery';
-global.jQuery = jQuery;
-global.$ = jQuery;
-let Bootstrap = require('bootstrap3');
-import 'bootstrap3/dist/css/bootstrap.css'
 
+import 'bootstrap3/dist/css/bootstrap.css';
+
+global.$ = jQuery;
 ApiService.init();
+Vue.use(VueChartkick, {adapter: Chart});
 Vue.config.productionTip = false;
 
 router.beforeEach((to, from, next) => {
