@@ -11,7 +11,7 @@ import TopSection from '../components/TopSection.vue';
 import EventWinnersTable from '../components/EventWinnersTable.vue';
 
 export default {
-  name: 'BoardGames',
+  name: 'EventDetails',
   components : {
   	TopSection,
     EventWinnersTable

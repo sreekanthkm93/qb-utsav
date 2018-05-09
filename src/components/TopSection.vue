@@ -1,5 +1,5 @@
 <template>
-<div class="top-header">
+<div class="top-header" :class="getEvent(title)">
 	<div>
 		<p class="top-header-title">{{title}}</p>	
 	</div>
@@ -9,16 +9,38 @@
 <script>
 export default {
   name: 'TopSection',
-  props: ['title']
+  props: ['title'],
+  methods: {
+      getEvent: function(title) {
+          return title;
+      }
+  }
 };
 </script>
 
 <style scoped>
 .top-header{
     height: 40vh;
-    background: url("../assets/carroms.jpg");
     background-repeat: no-repeat;
     background-position: center; 
+}
+.cricket{
+    height: 40vh;
+    background: url("../assets/cricket.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.football{
+    height: 40vh;
+    background: url("../assets/football.jpg");
+    background-repeat: no-repeat;
+    background-position: center;     
+}
+.carroms{
+    height: 40vh;
+    background: url("../assets/carroms.jpg");
+    background-repeat: no-repeat;
+    background-position: center;       
 }
 
 .top-header-title{
