@@ -28,17 +28,20 @@ export default {
     height: 40vh;
     background: url("../assets/cricket.jpg");
     background-repeat: no-repeat;
+    background-size:cover;
     background-position: center; 
 }
 .football{
     height: 40vh;
     background: url("../assets/football.jpg");
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;     
 }
 .carroms{
     height: 40vh;
     background: url("../assets/carroms.jpg");
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;       
 }
