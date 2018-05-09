@@ -1,5 +1,6 @@
 <template>
 <div>
+  <preloader-view/>
   <header-view/>
   <router-view/>
   <footer-view/>
@@ -9,10 +10,12 @@
 <script>
 import HeaderView from './components/HeaderView';
 import FooterView from './components/FooterView';
+import PreloaderView from './components/PreloaderView';
 
 export default {
   name: 'App',
   components: {
+    PreloaderView,
     HeaderView,
     FooterView
   }

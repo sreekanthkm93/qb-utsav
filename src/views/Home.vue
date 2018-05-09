@@ -1,10 +1,14 @@
 <template>
-<div>Home</div>
+<home-banner/>
 </template>
 
 <script>
+import HomeBanner from '../components/HomeBannerView';
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    HomeBanner
+  }
 };
 </script>
 
