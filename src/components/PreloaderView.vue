@@ -1,26 +1,26 @@
 <template>
-<div class="preloader">
-        <div class="status">
-          <div class="status-mes"></div>
-        </div>
-      </div>
+  <div class="preloader">
+    <div class="status">
+      <div class="status-mes"></div>
+    </div>
+  </div>
 </template>
 
 <script>
-export default {
-  name: 'Preloader',
-  mounted() {
-      this.$nextTick(()=>{
-          $('.status').fadeOut();
-          $('.preloader').delay(350).fadeOut('slow');
-      })
-  }
-};
+  export default {
+    name: 'Preloader',
+    mounted () {
+      this.$nextTick(() => {
+        $('.status').fadeOut();
+        $('.preloader').delay(350).fadeOut('slow');
+      });
+    }
+  };
 
 </script>
 
 <style scoped>
-.preloader {
+  .preloader {
     background: #fff;
     bottom: 0;
     left: 0;
@@ -28,9 +28,9 @@ export default {
     right: 0;
     top: 0;
     z-index: 99999;
-}
+  }
 
-.status-mes {
+  .status-mes {
     width: 45px;
     height: 45px;
     position: absolute;
@@ -47,36 +47,40 @@ export default {
     -webkit-animation: spinner 700ms infinite linear;
     animation: spinner 700ms infinite linear;
     z-index: 10000;
-}
+  }
 
-@-webkit-keyframes spinner {
+  @-webkit-keyframes spinner {
     0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
     }
-}
+  }
 
-@keyframes spinner {
+  @keyframes spinner {
     0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
     }
-}
-.status-mes h4 {
-color: #f7f7f7;
-position:relative;
-font-size:24px;
-margin-top: 30px;
-text-transform: capitalize;
-letter-spacing: 1px;
-}
-.no-padding { padding: 0 }
+  }
+
+  .status-mes h4 {
+    color: #f7f7f7;
+    position: relative;
+    font-size: 24px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+
+  .no-padding {
+    padding: 0
+  }
 </style>

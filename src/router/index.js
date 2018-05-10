@@ -6,6 +6,8 @@ import Home from '../views/Home';
 import Events from '../views/Events';
 import Teams from '../views/Teams';
 import BoardGames from '../views/BoardGames';
+import LeaderBoard from '../views/LeaderBoard';
+
 Vue.use(Router);
 
 export default new Router({
@@ -30,8 +32,11 @@ export default new Router({
       path: '/board-games',
       name: 'BoardGames',
       component: BoardGames
+    },
+    {
+      path: '/leaderBoard',
+      name: 'LeaderBoard',
+      component: LeaderBoard
     }
-
-
   ]
 });
