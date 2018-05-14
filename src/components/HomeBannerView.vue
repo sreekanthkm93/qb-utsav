@@ -1,16 +1,21 @@
 <template>
-<section class="home">
+<section class="home-banner">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
               <div class="hero-text">
-                <h1>QB UTSAV 3.0</h1>
-                <p>Play hard, work harder.</p>
+                <h1>The Event 3.0</h1>
+                <p>Work hard, Play harder.</p>
               </div>
             </div>
             <!--- END COL -->
           </div>
           <!--- END ROW -->
+          <div class="row">
+            <div class="col-md-4">
+              <home-leader-board/>
+            </div>
+          </div>
         </div>
       <div class="bg">
         <img src="../assets/bg.png" alt="bg">
@@ -19,13 +24,17 @@
 </template>
 
 <script>
+import HomeLeaderBoard from '../components/HomeLeaderBoardView';
 export default {
-  name: 'HomeBanner'
+  name: 'HomeBanner',
+  components: {
+      HomeLeaderBoard
+    }
 };
 </script>
 
 <style scoped>
-.home { height: 1000px;position:relative;}
+.home-banner { height: 1000px;position:relative;overflow: hidden}
 .hero-text{padding-top:250px;}
 @media only screen and (max-width:480px) { 
 .hero-text{padding-top:250px;}
