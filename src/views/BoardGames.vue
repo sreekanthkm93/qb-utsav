@@ -1,9 +1,9 @@
 <template>
 <div>
-	<top-section 
+	<event-banner	 
 		title="Carroms" 
 		description = "A round of carrom ends when one player pockets all of his or her pieces, and the queen has been pocketed. You play rounds until one player has reached 29 points.">		
-	</top-section>
+	</event-banner>
 	<events-container 
 		:aboutEvent = "eventSnapshot"
 		:eventResults = "eventOutcome"
@@ -15,13 +15,14 @@
 
 <script>
 
-import TopSection from '../components/TopSection.vue';
+import EventBanner from '../components/EventBanner.vue';
 import EventsContainer from '../components/EventsContainer.vue';
+
 
 export default {
   name: 'BoardGames',
   components : {
-  	TopSection,
+  	EventBanner,
   	EventsContainer
   },
   data(){

@@ -1,30 +1,36 @@
 <template>
 <div>
-    <div class="container-header">
-        <div class="col-xs-4" v-on:click = "clickEventTab('Aboutevent')">About event</div>
-        <div class="col-xs-4" v-on:click = "clickEventTab('Results')">Results</div>
-        <div class="col-xs-4" v-on:click = "clickEventTab('Schedule')">Schedule</div>
+    <div class="container-header ">
+        <div class="container text-left">      
+            <div class="row" >
+                <div class="col-xs-2" v-on:click = "clickEventTab('Aboutevent')">About event</div>
+                <div class="col-xs-2" v-on:click = "clickEventTab('Results')">Results</div>
+                <div class="col-xs-2" v-on:click = "clickEventTab('Schedule')">Schedule</div>
+            </div>
+        </div>
     </div>
     <div class="container-body">
-        <div v-if="eventSection" class="about-event">
-            <div class="about-event-header ">{{aboutEvent.name}}</div>
-            <div class="about-event-content">{{aboutEvent.details}}</div>
-            <div class="about-event-footer">
-                <div class="col-xs-4">
-                    <div>Organizers</div>
-                    <div v-for="member in aboutEvent.committee">{{member}}</div>
-                </div>
-                <div class="col-xs-4">
-                    <div>When</div>
-                    <div>{{aboutEvent.time}}</div>
-                </div>
-            </div>            
-        </div>
-        <div v-if="resultSection" class="results">
-               <div>RESULTS</div>    
-        </div>
-        <div v-if="scheduleSection" class="schedule">
-               <div>SCHEDULE</div>      
+        <div class="container">
+            <div v-if="eventSection" class="about-event">
+                <div class="about-event-header ">{{aboutEvent.name}}</div>
+                <div class="about-event-content">{{aboutEvent.details}}</div>
+                <div class="about-event-footer">
+                    <div class="col-xs-4">
+                        <div>Organizers</div>
+                        <div v-for="member in aboutEvent.committee">{{member}}</div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div>When</div>
+                        <div>{{aboutEvent.time}}</div>
+                    </div>
+                </div>                          
+            </div>
+            <div v-if="resultSection" class="results">
+                <div>RESULTS</div>    
+            </div>
+            <div v-if="scheduleSection" class="schedule">
+                <div>SCHEDULE</div>      
+            </div>
         </div>
     </div>
 </div>
