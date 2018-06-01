@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="container-header ">
+    <div class="container-header" v-on:click="scrollToTab" ref="eventsDetailTab">
         <div class="container text-left">      
             <div class="row" >
                 <div class="col-xs-2" v-on:click = "clickEventTab('Aboutevent')">About event</div>
@@ -31,22 +31,22 @@
             <div v-if="scheduleSection" class="schedule">
                 <div>SCHEDULE</div>      
             </div>
-        </div>
+        </div>        
     </div>
 </div>
 </template>
 <script>
 export default {
-  name: 'EventsContainer',
-  props: ['aboutEvent','eventResults','eventSchedule'],
-   data(){
-    return{
-        eventSection: true,
-        resultSection: false,
-        scheduleSection: false,
-    }
-   },
-   methods:{
+    name: 'EventsContainer',
+    props: ['aboutEvent','eventResults','eventSchedule'],
+    data(){
+        return{
+            eventSection: true,
+            resultSection: false,
+            scheduleSection: false,
+        }
+    },
+    methods:{
        clickEventTab: function(type) {
             if (type === 'Aboutevent'){
                 this.eventSection = true;this.resultSection = false;this.scheduleSection = false;}
@@ -54,30 +54,37 @@ export default {
                 this.eventSection = false;this.resultSection = true;this.scheduleSection = false;}
             else if (type === 'Schedule'){
                 this.eventSection = false;this.resultSection = false;this.scheduleSection = true;}    
+        },
+        scrollToTab: function(event) {
+
+            $('html, body').stop().animate({
+					scrollTop: $('.event-banner').outerHeight() - 70
+				}, 800);
+
         }
-   }
+    }
+   
 };
 </script>
 
 <style scoped>
-.container-header{
-    background: #949191;
-    width: 100%;
-    float: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-    cursor: pointer;
+.container-header {
+  background: #949191;
+  width: 100%;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
 }
-.container-body{
-    background:#ffffff;
-    width: 100%;
-    height: 100vh;  
+.container-body {
+  background: #ffffff;
+  width: 100%;
+  height: 100vh;
 }
-.about-event-footer{
-    margin-top: 15px;
-    width: 50%;
-    float: left;
+.about-event-footer {
+  margin-top: 15px;
+  width: 50%;
+  float: left;
 }
-
 </style>

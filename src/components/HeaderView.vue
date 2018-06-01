@@ -1,6 +1,6 @@
 <template>
   <!-- START PRELOADER -->
-  <div class="navbar navbar-default navbar-fixed-top menu-top">
+  <div class="navbar navbar-default navbar-fixed-top menu-top" ref="navbar">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
