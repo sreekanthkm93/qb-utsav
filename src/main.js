@@ -8,6 +8,9 @@ import ApiService from './common/api.service';
 import Chart from 'chart.js';
 import VueChartkick from 'vue-chartkick';
 import jQuery from 'jquery';
+import {VueMasonryPlugin} from 'vue-masonry';
+
+Vue.use(VueMasonryPlugin)
 
 import 'bootstrap3/dist/css/bootstrap.css';
 

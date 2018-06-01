@@ -1,7 +1,7 @@
 <template>
     <div class="events-slider">
         <flickity ref="flickity" :options="flickityOptions">
-            <div class="carousel-cell"><img src="../assets/events/event1.png" alt="event"></div>
+            <div class="carousel-cell"><a href="/board-games"><img src="../assets/events/event1.png" alt="event"/>></a></div>
             <div class="carousel-cell"><img src="../assets/events/event2.png" alt="event"></div>
             <div class="carousel-cell"><img src="../assets/events/event3.png" alt="event"></div>
             <div class="carousel-cell"><img src="../assets/events/event1.png" alt="event"></div>
