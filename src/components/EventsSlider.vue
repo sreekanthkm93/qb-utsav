@@ -1,6 +1,6 @@
 <template>
     <div class="events-slider">
-        <flickity ref="flickity" :options="flickityOptions">
+        <flickity ref="flickity" :options="flickityOptions" style="margin-left: 20%;"">
             <div class="carousel-cell"><a href="/board-games"><img src="../assets/events/event1.png" alt="event"/>></a></div>
             <div class="carousel-cell"><img src="../assets/events/event2.png" alt="event"></div>
             <div class="carousel-cell"><img src="../assets/events/event3.png" alt="event"></div>
@@ -22,12 +22,12 @@ export default {
   data() {
     return {
       flickityOptions: {
-      initialIndex: 3,
+      initialIndex: 1,
       prevNextButtons: false,
       pageDots: false,
-      wrapAround: false,
-      groupCells: 4
-
+      wrapAround: true,
+      freeScroll: true,
+      draggable: true
       // any options from Flickity can be used
       }
     }
