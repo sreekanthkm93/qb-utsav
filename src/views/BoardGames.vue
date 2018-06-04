@@ -31,7 +31,8 @@ export default {
   			'name':'Carroms Tournament',
   			'details':"The 2016 Carrom World Championship, was the 7th edition of an international Carrom tournament governed by the International Carrom Federation, contested from 7 to 11 November 2016 in UK. The 2016 Carrom World Championship, was the 7th edition of an international Carrom tournament governed by the International Carrom Federation, contested from 7 to 11 November 2016 in UK.",
   			'committee':['vimal','arunJolly','Babu KA'],
-  			'time': "2018 May2 - May30" 
+  			'time': "2018 May2 - May30",
+        'rules' : 'https://www.google.com/+/policy/contestspolicy.html'
   	        },
   		eventOutcome:"bla bla bla",
   		eventTimings:"bla bla"

@@ -25,8 +25,17 @@
                     </div>
                 </div>                          
             </div>
+
+             <div v-if="eventSection" class="about-event">
+                <div class="about-event-header ">Rules</div>
+                <div class="about-event-content">
+                    <a :href="aboutEvent.rules">{{aboutEvent.rules}}</a>
+                </div>          
+            </div>
+
             <div v-if="resultSection" class="results">
-                <div>RESULTS</div>    
+                <div>RESULTS</div>
+                <p>{{eventResults}}</p>  
             </div>
             <div v-if="scheduleSection" class="schedule">
                 <!-- Schedule for carroms Starts-->
@@ -157,19 +166,25 @@ export default {
   width: 100%;
   height: 100vh;
 }
+
+.about-event-header {
+  width: 100%;
+  float: left;
+  font-size: 40px;
+  font-weight: 800;
+  padding: 80px 0px 20px 0px;
+}
+
+.about-event-content{
+    width: 100%;
+    float: left;
+}
+
 .about-event-footer{
     margin-top: 15px;
     width: 50%;
     float: left;
 }
-
-
-.about-event-footer {
-  margin-top: 15px;
-  width: 50%;
-  float: left;
-}
-
 /* 
 CSS Style sheet
 Ver. 1.0
