@@ -22,5 +22,14 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+
+  @import "./assets/fonts/fonts.scss";
+
+  body {
+      background-color: rgba(0, 0, 24, 1);
+      font-family: Gilroy,sans-serif;
+      font-size: 16px;
+      color: #f0f0f0;
+  }
 </style>
