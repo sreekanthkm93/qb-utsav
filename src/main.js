@@ -13,6 +13,8 @@ import {VueMasonryPlugin} from 'vue-masonry';
 Vue.use(VueMasonryPlugin)
 
 import 'bootstrap3/dist/css/bootstrap.css';
+import 'swiper/dist/css/swiper.css';
+
 
 global.$ = jQuery;
 ApiService.init();

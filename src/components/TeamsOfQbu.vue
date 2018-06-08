@@ -2,7 +2,8 @@
   <section class="teams-qbu home">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
             <div class="title">
               <h5>Teams of QBU 3</h5>
               <h1>Supercalifragilistic Heading Here</h1>
@@ -13,14 +14,74 @@
               </p>
             </div>
           </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-container">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- swiper -->
+            <swiper :options="swiperOption">
+              <swiper-slide><img src="../assets/team_1.png" alt="slider 1"></swiper-slide>
+              <swiper-slide><img src="../assets/team_2.png" alt="slider 2"></swiper-slide>
+              <swiper-slide><img src="../assets/team_3.png" alt="slider 3"></swiper-slide>
+              <swiper-slide><img src="../assets/team_4.png" alt="slider 4"></swiper-slide>
+              <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
+        </div>
+        <div class="col-md-3">
+          <!-- swiper -->
+            <swiper :options="swiperOption">
+              <swiper-slide><img src="../assets/team_2.png" alt="slider 1"></swiper-slide>
+              <swiper-slide><img src="../assets/team_3.png" alt="slider 2"></swiper-slide>
+              <swiper-slide><img src="../assets/team_4.png" alt="slider 3"></swiper-slide>
+              <swiper-slide><img src="../assets/team_1.png" alt="slider 4"></swiper-slide>
+              <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
+        </div>
+        <div class="col-md-3">
+          <!-- swiper -->
+            <swiper :options="swiperOption">
+              <swiper-slide><img src="../assets/team_3.png" alt="slider 1"></swiper-slide>
+              <swiper-slide><img src="../assets/team_4.png" alt="slider 2"></swiper-slide>
+              <swiper-slide><img src="../assets/team_1.png" alt="slider 3"></swiper-slide>
+              <swiper-slide><img src="../assets/team_2.png" alt="slider 4"></swiper-slide>
+              <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
+        </div>
+        <div class="col-md-3">
+          <!-- swiper -->
+            <swiper :options="swiperOption">
+              <swiper-slide><img src="../assets/team_4.png" alt="slider 1"></swiper-slide>
+              <swiper-slide><img src="../assets/team_1.png" alt="slider 2"></swiper-slide>
+              <swiper-slide><img src="../assets/team_2.png" alt="slider 3"></swiper-slide>
+              <swiper-slide><img src="../assets/team_3.png" alt="slider 4"></swiper-slide>
+              <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
         </div>
       </div>
     </div>
   </section>
 </template>
 <script>
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
+
 export default {
-  name:'TeamsOfQbu'
+  name:'TeamsOfQbu',
+  components: {
+    swiper,
+    swiperSlide
+  },
+  data() {
+      return {
+        swiperOption: {
+          pagination: {
+            el: '.swiper-pagination'
+          }
+        }
+      }
+    }
 }
 </script>
 <style scoped>
@@ -30,5 +91,20 @@ export default {
     padding-bottom:20px
   }
 
+  .slider-container {
+    margin-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .slider-container .col-md-3 {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .slider-container img{
+      width: 100%;
+  }
 </style>
 
