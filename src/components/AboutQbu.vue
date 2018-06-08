@@ -65,8 +65,7 @@ export default {
   data() {
       return {
         swiperOption: {
-          slidesPerView: 0,
-          spaceBetween: 20,
+          slidesPerView: 2.5,
           speed: 600,
           freeMode: !0,
           freeModeMomentum: !0,
