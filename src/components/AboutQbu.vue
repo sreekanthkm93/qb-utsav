@@ -9,8 +9,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
-          <div class="title">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="title" id="aboutQB">
             <h5>About Qburst Utsav</h5>
             <h1>Young, Wild & Free</h1>
           </div>
@@ -20,8 +21,10 @@
             </p>
           </div>
         </div>
+        <div class="col-md-2"></div>
       </div>
       <div class="row m-top30">
+        <div class="col-md-2"></div>
         <div class="col-md-2">
           <h6>WHERE</h6>
           <h4>QBurst Koratty</h4>
@@ -31,22 +34,89 @@
           <h4>2018 Yearlong</h4>
         </div>
         <div class="col-md-2">
-            <button type="button" class="btn btn-more">Basic</button>
+            <button type="button" class="btn btn-more">KNOW MORE</button>
         </div>
       </div>
-      <div class="slider">
-
-      </div>
+    </div>
+    <div class="swiper-container" >
+          <swiper :options="swiperOption"  ref="aboutSwiper">
+            <!-- slides -->
+            <swiper-slide><img src="../assets/Bitmap_1.png" alt="slider 1"></swiper-slide>
+            <swiper-slide><img src="../assets/Bitmap_2.png" alt="slider 2"></swiper-slide>
+            <swiper-slide><img src="../assets/Bitmap_1.png" alt="slider 3"></swiper-slide>
+            <swiper-slide><img src="../assets/Bitmap_2.png" alt="slider 4"></swiper-slide>
+            <swiper-slide><img src="../assets/Bitmap_1.png" alt="slider 5"></swiper-slide>
+            <swiper-slide><img src="../assets/Bitmap_2.png" alt="slider 6"></swiper-slide>
+          </swiper>
     </div>
   </section>
 </template>
 <script>
+import { swiper, swiperSlide } from 'vue-awesome-swiper';
+var pos = (window.innerWidth - 1170) / 2 ;
+    pos += 1170/12 * 2;
+
 export default {
-  name: 'AboutQbu'
+  name: 'AboutQbu',
+  components: {
+    swiper,
+    swiperSlide
+  },
+  data() {
+      return {
+        swiperOption: {
+          slidesPerView: 0,
+          spaceBetween: 20,
+          speed: 600,
+          freeMode: !0,
+          freeModeMomentum: !0,
+          freeModeMomentumRatio: .6,
+          freeModeMomentumVelocityRatio: .2,
+          freeModeMinimumVelocity: .2,
+          watchSlidesProgress: !0,
+          watchSlidesVisibility: !0,
+          resistance: !0,
+          slidesOffsetBefore: pos,
+          breakpoints: {
+            414: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                slidesOffsetAfter: 30,
+                freeModeMomentumRatio: 1.5,
+                freeModeMomentumVelocityRatio: .4,
+                speed: 400
+            },
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 25,
+                slidesOffsetAfter: 30,
+                freeModeMomentumRatio: 1.5,
+                freeModeMomentumVelocityRatio: .4
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 25,
+                slidesOffsetAfter: 30,
+                freeModeMomentumRatio: 1.5,
+                freeModeMomentumVelocityRatio: .4
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 25
+            }
+          }
+        }
+      }
+    },
+    computed: {
+      swiper() {
+        return this.$refs.aboutSwiper.swiper
+      }
+    }
 }
 </script>
 <style>
-  .home .title {
+  .about-qbu .title {
     margin-top: 310px;
   }
 
@@ -56,6 +126,7 @@ export default {
     font-weight: bold;
     color: rgba(80, 227, 194, 1);
     text-align: left;
+    text-transform: uppercase;
   }
 
   .home .title h1 {
@@ -119,11 +190,18 @@ export default {
     background: transparent;
     border-radius: 0;
   }
-/*Remove*/
-.slider {
-  margin-top:40px;
-  height: 326px;
-}
+  .swiper-container {
+    margin-top:30px;
+  }
+  .swiper-slide {
+    width: 60%;
+  }
+  .swiper-slide:nth-child(2n) {
+      width: 40%;
+  }
+  .swiper-slide:nth-child(3n) {
+      width: 20%;
+  }
 </style>
 
 
