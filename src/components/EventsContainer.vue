@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="container-header" v-on:click="scrollToTab" ref="eventsDetailTab">
-        <div class="container text-left">      
+        <div class="container text-left">
             <div class="row" >
                 <div class="col-xs-2" v-on:click = "clickEventTab('Aboutevent')">About event</div>
                 <div class="col-xs-2" v-on:click = "clickEventTab('Results')">Results</div>
@@ -12,6 +12,7 @@
     <div class="container-body">
         <div class="container">
             <div v-if="eventSection" class="about-event">
+              <carrom-fixture/>
                 <div class="about-event-header ">{{aboutEvent.name}}</div>
                 <div class="about-event-content">{{aboutEvent.details}}</div>
                 <div class="about-event-footer">
@@ -23,22 +24,28 @@
                         <div>When</div>
                         <div>{{aboutEvent.time}}</div>
                     </div>
-                </div>                          
+                </div>
             </div>
             <div v-if="resultSection" class="results">
-                <div>RESULTS</div>    
+                <div>RESULTS</div>
             </div>
             <div v-if="scheduleSection" class="schedule">
-                <div>SCHEDULE</div>      
+                <div>SCHEDULE</div>
+                <carrom-fixture/>
             </div>
-        </div>        
+        </div>
     </div>
 </div>
 </template>
 <script>
+import CarromFixture from '../components/CarromFixture';
+
 export default {
     name: 'EventsContainer',
     props: ['aboutEvent','eventResults','eventSchedule'],
+    components: {
+      CarromFixture
+    },
     data(){
         return{
             eventSection: true,
@@ -53,7 +60,7 @@ export default {
             else if (type === 'Results'){
                 this.eventSection = false;this.resultSection = true;this.scheduleSection = false;}
             else if (type === 'Schedule'){
-                this.eventSection = false;this.resultSection = false;this.scheduleSection = true;}    
+                this.eventSection = false;this.resultSection = false;this.scheduleSection = true;}
         },
         scrollToTab: function(event) {
 
@@ -63,7 +70,7 @@ export default {
 
         }
     }
-   
+
 };
 </script>
 
