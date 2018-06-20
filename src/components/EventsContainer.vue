@@ -3,16 +3,20 @@
     <div class="container-header" v-on:click="scrollToTab" ref="eventsDetailTab">
         <div class="container text-left">
             <div class="row" >
-                <div class="col-xs-2" v-on:click = "clickEventTab('Aboutevent')">About event</div>
-                <div class="col-xs-2" v-on:click = "clickEventTab('Results')">Results</div>
-                <div class="col-xs-2" v-on:click = "clickEventTab('Schedule')">Schedule</div>
+                <div class="col-xs-1" v-on:click = "clickEventTab('events')">EVENTS</div>
+                <div class="col-xs-2" v-on:click = "clickEventTab('wom_sing')">WOMENTS SINGLES</div>
+                <div class="col-xs-2" v-on:click = "clickEventTab('men_sing')">MENS SINGLES</div>
+                <div class="col-xs-2" v-on:click = "clickEventTab('wom_doub')">WOMENTS DOUBLES</div>
+                <div class="col-xs-2" v-on:click = "clickEventTab('men_doub')">MENTS DOUBLES</div>
+                <div class="col-xs-2" v-on:click = "clickEventTab('mix_doub')">MIXED DOUBLES</div>
+                <div class="col-xs-1" v-on:click = "clickEventTab('rules')">RULES</div>
             </div>
         </div>
     </div>
-    <div class="container-body">
+    <!-- <div class="container-body">
         <div class="container">
             <div v-if="eventSection" class="about-event">
-              <carrom-fixture/>
+
                 <div class="about-event-header ">{{aboutEvent.name}}</div>
                 <div class="about-event-content">{{aboutEvent.details}}</div>
                 <div class="about-event-footer">
@@ -31,36 +35,58 @@
             </div>
             <div v-if="scheduleSection" class="schedule">
                 <div>SCHEDULE</div>
-                <carrom-fixture/>
+
             </div>
         </div>
+    </div> -->
+    <div class="fixture-container">
+      <wom-sing-fixture v-if="wom_sing"/>
     </div>
+
 </div>
 </template>
 <script>
-import CarromFixture from '../components/CarromFixture';
+import WomSingFixture from '../components/WomSingFixture';
 
 export default {
     name: 'EventsContainer',
     props: ['aboutEvent','eventResults','eventSchedule'],
     components: {
-      CarromFixture
+      WomSingFixture
     },
     data(){
         return{
-            eventSection: true,
-            resultSection: false,
-            scheduleSection: false,
+            events: true,
+            wom_sing: false,
+            men_sing: false,
+            wom_doub: false,
+            men_doub: false,
+            mix_doub: false,
+            rules: false
         }
     },
     methods:{
        clickEventTab: function(type) {
-            if (type === 'Aboutevent'){
-                this.eventSection = true;this.resultSection = false;this.scheduleSection = false;}
-            else if (type === 'Results'){
-                this.eventSection = false;this.resultSection = true;this.scheduleSection = false;}
-            else if (type === 'Schedule'){
-                this.eventSection = false;this.resultSection = false;this.scheduleSection = true;}
+            this.resetTab();
+            switch(type) {
+              case 'events': this.events = true; break;
+              case 'wom_sing': this.wom_sing = true; break;
+              case 'men_sing': this.men_sing = true; break;
+              case 'wom_doub': this.wom_doub = true; break;
+              case 'men_doub': this.men_doub = true; break;
+              case 'mix_doub': this.mix_doub = true; break;
+              case 'rules': this.rules = true; break;
+              default: this.events = true;
+            }
+        },
+        resetTab: function() {
+            this.events = false;
+            this.wom_sing = false;
+            this.men_sing = false;
+            this. wom_doub = false;
+            this.men_doub = false;
+            this.mix_doub = false;
+            this.rules = false
         },
         scrollToTab: function(event) {
 
@@ -85,13 +111,19 @@ export default {
   cursor: pointer;
 }
 .container-body {
-  background: #ffffff;
+  background: #000017;
   width: 100%;
-  height: 100vh;
 }
 .about-event-footer {
   margin-top: 15px;
   width: 50%;
   float: left;
+}
+
+.fixture-container {
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
+  content: " ";
 }
 </style>
