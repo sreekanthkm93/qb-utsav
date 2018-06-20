@@ -67,6 +67,7 @@ export default {
         swiperOption: {
           slidesPerView: 2.5,
           speed: 600,
+
           freeMode: !0,
           freeModeMomentum: !0,
           freeModeMomentumRatio: .6,
@@ -76,6 +77,8 @@ export default {
           watchSlidesVisibility: !0,
           resistance: !0,
           slidesOffsetBefore: pos,
+           mousewheel: true,
+            keyboard : true,
           breakpoints: {
             414: {
                 slidesPerView: 1,
