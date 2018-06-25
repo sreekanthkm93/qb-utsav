@@ -54,7 +54,8 @@ export default {
             wom_doub: false,
             men_doub: false,
             mix_doub: false,
-            rules: false
+            rules: false,
+            con_height: 500
         }
     },
     methods:{
@@ -89,9 +90,8 @@ export default {
         }
     },
     mounted () {
-      let that = this;
-      this.$nextTick(function() {
-          that.con_height = window.innerHeight -120;
+      this.$nextTick(()=> {
+          this.con_height = window.innerHeight -120;
       })
     }
 
