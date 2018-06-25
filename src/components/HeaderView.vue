@@ -16,7 +16,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-9">
+        <!-- <div class="col-md-9">
           <div class="navbar-collapse collapse">
             <nav>
               <ul class="nav navbar-nav navbar-right scrollable-menu">
@@ -37,7 +37,7 @@
               </ul>
             </nav>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <!--- END CONTAINER -->
@@ -114,6 +114,15 @@ export default {
 
 .navbar-brand img {
   width: 170px;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.navbar.menu-shrink .navbar-brand {
+  height:38px;
+}
+.navbar.menu-shrink .navbar-brand img {
+  width: 100px;
 }
 
 .navbar-default .navbar-collapse,
@@ -175,7 +184,7 @@ export default {
 }
 
 .navbar-default.menu-shrink {
-  background-color: #222;
+  background-color: #20272f;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   width: 100%;
