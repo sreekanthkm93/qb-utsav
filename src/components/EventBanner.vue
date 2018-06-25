@@ -59,7 +59,7 @@ export default {
 
 .hero-text img{margin-bottom:30px}
 .hero-text h1{
-color: ##6583e4;
+color: #6583e4;
 font-size: 30px;
 font-weight: 900;
 text-transform: uppercase;
