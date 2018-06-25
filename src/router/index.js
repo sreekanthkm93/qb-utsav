@@ -16,33 +16,38 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '/events',
-      name: 'Events',
-      component: Events
-    },
-    {
-      path: '/teams',
-      name: 'Teams',
-      component: Teams
-    },
-    {
-      path: '/gallery',
-      name: 'Gallery',
-      component: Gallery
-    },
-    {
-      path: '/board-games',
       name: 'BoardGames',
       component: BoardGames
-    },
-    {
-      path: '/leaderBoard',
-      name: 'LeaderBoard',
-      component: LeaderBoard
     }
+    // {
+    //   path: '/',
+    //   name: 'Home',
+    //   component: Home
+    // },
+    // {
+    //   path: '/events',
+    //   name: 'Events',
+    //   component: Events
+    // },
+    // {
+    //   path: '/teams',
+    //   name: 'Teams',
+    //   component: Teams
+    // },
+    // {
+    //   path: '/gallery',
+    //   name: 'Gallery',
+    //   component: Gallery
+    // },
+    // {
+    //   path: '/board-games',
+    //   name: 'BoardGames',
+    //   component: BoardGames
+    // },
+    // {
+    //   path: '/leaderBoard',
+    //   name: 'LeaderBoard',
+    //   component: LeaderBoard
+    // }
   ]
 });

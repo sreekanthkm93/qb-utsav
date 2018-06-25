@@ -1,63 +1,55 @@
 <template>
-<div>
+<section>
     <div class="container-header" v-on:click="scrollToTab" ref="eventsDetailTab">
         <div class="container text-left">
             <div class="row" >
-                <div class="col-xs-1" v-on:click = "clickEventTab('events')">EVENTS</div>
-                <div class="col-xs-2" v-on:click = "clickEventTab('wom_sing')">WOMENTS SINGLES</div>
-                <div class="col-xs-2" v-on:click = "clickEventTab('men_sing')">MENS SINGLES</div>
-                <div class="col-xs-2" v-on:click = "clickEventTab('wom_doub')">WOMENTS DOUBLES</div>
-                <div class="col-xs-2" v-on:click = "clickEventTab('men_doub')">MENTS DOUBLES</div>
-                <div class="col-xs-2" v-on:click = "clickEventTab('mix_doub')">MIXED DOUBLES</div>
-                <div class="col-xs-1" v-on:click = "clickEventTab('rules')">RULES</div>
+                <!-- <div class="col-xs-1" v-bind:class="{ active: events }" v-on:click = "clickEventTab('events')">EVENTS</div> -->
+                <div class="col-xs-2" v-bind:class="{ active: wom_sing }" v-on:click = "clickEventTab('wom_sing')">WOMENTS SINGLES</div>
+                <div class="col-xs-2" v-bind:class="{ active: men_sing }" v-on:click = "clickEventTab('men_sing')">MENS SINGLES</div>
+                <div class="col-xs-2" v-bind:class="{ active: wom_doub }" v-on:click = "clickEventTab('wom_doub')">WOMENTS DOUBLES</div>
+                <div class="col-xs-2" v-bind:class="{ active: men_doub }" v-on:click = "clickEventTab('men_doub')">MENTS DOUBLES</div>
+                <div class="col-xs-2" v-bind:class="{ active: mix_doub }" v-on:click = "clickEventTab('mix_doub')">MIXED DOUBLES</div>
+                <div class="col-xs-2" v-bind:class="{ active: rules }" v-on:click = "clickEventTab('rules')">RULES</div>
             </div>
         </div>
     </div>
-    <!-- <div class="container-body">
-        <div class="container">
-            <div v-if="eventSection" class="about-event">
-
-                <div class="about-event-header ">{{aboutEvent.name}}</div>
-                <div class="about-event-content">{{aboutEvent.details}}</div>
-                <div class="about-event-footer">
-                    <div class="col-xs-4">
-                        <div>Organizers</div>
-                        <div v-for="member in aboutEvent.committee">{{member}}</div>
-                    </div>
-                    <div class="col-xs-4">
-                        <div>When</div>
-                        <div>{{aboutEvent.time}}</div>
-                    </div>
-                </div>
-            </div>
-            <div v-if="resultSection" class="results">
-                <div>RESULTS</div>
-            </div>
-            <div v-if="scheduleSection" class="schedule">
-                <div>SCHEDULE</div>
-
-            </div>
-        </div>
-    </div> -->
-    <div class="fixture-container">
+    <div class="fixture-container" v-bind:style="{ height: con_height + 'px' }">
+      <events v-if="events"/>
       <wom-sing-fixture v-if="wom_sing"/>
+      <men-sing-fixture v-if="men_sing"/>
+      <wom-doub-fixture v-if="wom_doub"/>
+      <men-doub-fixture v-if="men_doub"/>
+      <mix-doub-fixture v-if="mix_doub"/>
+      <rules v-if="rules"/>
     </div>
 
-</div>
+</section>
 </template>
 <script>
-import WomSingFixture from '../components/WomSingFixture';
+import Events from '../components/carroms/Events';
+import WomSingFixture from '../components/carroms/WomSingFixture';
+import MenSingFixture from '../components/carroms/MenSingFixture';
+import WomDoubFixture from '../components/carroms/WomDoubFixture';
+import MenDoubFixture from '../components/carroms/MenDoubFixture';
+import MixDoubFixture from '../components/carroms/MixDoubFixture';
+import Rules from '../components/carroms/Rules';
 
 export default {
     name: 'EventsContainer',
     props: ['aboutEvent','eventResults','eventSchedule'],
     components: {
-      WomSingFixture
+      Events,
+      WomSingFixture,
+      MenSingFixture,
+      WomDoubFixture,
+      MenDoubFixture,
+      MixDoubFixture,
+      Rules
     },
     data(){
         return{
-            events: true,
-            wom_sing: false,
+            events: false,
+            wom_sing: true,
             men_sing: false,
             wom_doub: false,
             men_doub: false,
@@ -91,18 +83,28 @@ export default {
         scrollToTab: function(event) {
 
             $('html, body').stop().animate({
-					scrollTop: $('.event-banner').outerHeight() - 70
+					scrollTop: $('.event-banner').outerHeight() - 58
 				}, 800);
 
         }
+    },
+    mounted () {
+      let that = this;
+      this.$nextTick(function() {
+          that.con_height = window.innerHeight -120;
+      })
     }
 
 };
 </script>
 
 <style scoped>
+section{
+	background-color: rgba(0, 0, 24, 1);
+}
 .container-header {
-  background: #949191;
+  background: #191d23;
+  color: #464646;
   width: 100%;
   float: left;
   padding-top: 20px;
@@ -110,8 +112,12 @@ export default {
   text-align: center;
   cursor: pointer;
 }
+.container-header .active {
+  color: #1a45d2;
+  /* font-weight: bold; */
+}
 .container-body {
-  background: #000017;
+  /* background: #000017; */
   width: 100%;
 }
 .about-event-footer {
@@ -121,6 +127,7 @@ export default {
 }
 
 .fixture-container {
+  min-height: 90vh;
   margin-right: auto;
   margin-left: auto;
   display: table;

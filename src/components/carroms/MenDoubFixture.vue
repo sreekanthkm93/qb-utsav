@@ -4,41 +4,41 @@
       <div class="bracket-game">
         <div class="player top kratos">
           <span class="team"></span>
-          <span class="participant">Priya</span>
-        </div>
-        <div class="player bot heracles">
-          <span class="team"></span>
-          <span class="participant">Ponni</span>
-        </div>
-      </div>
-      <div class="bracket-game cont">
-        <div class="player top spartans won">
-          <span class="team"></span>
-          <span class="participant">Archana</span>
-        </div>
-        <div class="player bot heracles">
-          <span class="team"></span>
-          <span class="participant">Shinija</span>
-        </div>
-      </div>
-      <div class="bracket-game cont">
-        <div class="player top kratos won">
-          <span class="team"></span>
-          <span class="participant">Sruthy</span>
+          <span class="participant">Krishnanunni - Dinto</span>
         </div>
         <div class="player bot spartans">
           <span class="team"></span>
-          <span class="participant">Titty</span>
+          <span class="participant">Nidhish - Kishor</span>
         </div>
       </div>
       <div class="bracket-game cont">
-        <div class="player top olympus won">
+        <div class="player top spartans">
           <span class="team"></span>
-          <span class="participant">Tinu</span>
+          <span class="participant">Varun - Arun Jose</span>
+        </div>
+        <div class="player bot heracles">
+          <span class="team"></span>
+          <span class="participant">Sreeraj - Sanandanan</span>
+        </div>
+      </div>
+      <div class="bracket-game cont">
+        <div class="player top heracles">
+          <span class="team"></span>
+          <span class="participant">Sam - Linto</span>
         </div>
         <div class="player bot spartans">
           <span class="team"></span>
-          <span class="participant">Bilvi</span>
+          <span class="participant">Musfar - Akhil Menon</span>
+        </div>
+      </div>
+      <div class="bracket-game cont">
+        <div class="player top olympus ">
+          <span class="team"></span>
+          <span class="participant">Deljo - Sarath Unnikrishnan</span>
+        </div>
+        <div class="player bot heracles">
+          <span class="team"></span>
+          <span class="participant">Nandu - Hawari</span>
         </div>
       </div>
     </div>
@@ -49,31 +49,32 @@
 
           <div class="player top olympus">
             <span class="team"></span>
-            <span class="participant">Sreeshma</span>
+            <span class="participant">Arjun Ravi - Chinmayan</span>
           </div>
           <div class="player bot ">
+            <span class="team"></span>
             <span class="participant">---</span>
           </div>
 
       </div>
       <div class="bracket-game cont">
-        <div class="player top heracles">
+        <div class="player top kratos">
           <span class="team"></span>
-          <span class="participant">Amrutha</span>
+          <span class="participant">Amal Varghese - Jewel</span>
         </div>
         <div class="player bot spartans">
           <span class="team"></span>
-          <span class="participant">Archana</span>
+          <span class="participant">---</span>
         </div>
       </div>
       <div class="bracket-game cont">
         <div class="player top spartans">
           <span class="team"></span>
-          <span class="participant">Pooja</span>
+          <span class="participant">Rahul - Sreekanth</span>
         </div>
         <div class="player bot kratos">
           <span class="team"></span>
-          <span class="participant">Sruthy</span>
+          <span class="participant">---</span>
         </div>
       </div>
       <div class="bracket-game cont">
@@ -82,6 +83,7 @@
           <span class="participant">Ruby</span>
         </div>
         <div class="player bot ">
+          <span class="team"></span>
           <span class="participant">---</span>
         </div>
       </div>
@@ -93,9 +95,11 @@
       <div class="bracket-game">
         <div class="connector">
           <div class="player top ">
+            <span class="team"></span>
             <span class="participant">---</span>
           </div>
           <div class="player bot ">
+            <span class="team"></span>
             <span class="participant">---</span>
           </div>
         </div>
@@ -103,9 +107,11 @@
       <div class="bracket-game cont">
         <div class="connector">
           <div class="player top ">
+            <span class="team"></span>
             <span class="participant">---</span>
           </div>
           <div class="player bot ">
+            <span class="team"></span>
             <span class="participant">---</span>
           </div>
         </div>
@@ -113,16 +119,18 @@
     </div>
     <!-- /level three left-->
 
-    <div class="round r-4-left">
+    <!-- <div class="round r-4-left">
       <div class="bracket-game">
         <div class="player top ">
+          <span class="team"></span>
           <span class="participant">---</span>
         </div>
         <div class="player bot ">
+          <span class="team"></span>
          <span class="participant">---</span>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- /level four left-->
 
    <div class="round r-5">
@@ -133,44 +141,52 @@
     <!-- <div class="round r-5">
       <div class="bracket-game">
         <div class="player top ">
+          <span class="team"></span>
           <span class="participant">---</span>
         </div>
         <div class="player bot ">
+          <span class="team"></span>
           <span class="participant">---</span>
         </div>
       </div>
     </div> -->
     <!-- /level five -->
 
-    <div class="round r-4-right">
+    <!-- <div class="round r-4-right">
       <div class="bracket-game">
         <div class="player top ">
+          <span class="team"></span>
           <span class="participant">---</span>
         </div>
         <div class="player bot ">
+          <span class="team"></span>
           <span class="participant">---</span>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- /level four right -->
 
     <div class="round r-3-right">
       <div class="bracket-game">
         <div class="connector">
           <div class="player top">
+            <span class="team"></span>
             <span class="participant">---</span>
           </div>
           <div class="player bot ">
+            <span class="team"></span>
             <span class="participant">---</span>
           </div>
         </div>
       </div>
-      <div class="bracket-game cont">
+      <div class="bracket-game cont m-2">
         <div class="connector">
           <div class="player top">
+            <span class="team"></span>
             <span class="participant">---</span>
           </div>
           <div class="player bot">
+            <span class="team"></span>
             <span class="participant">---</span>
           </div>
         </div>
@@ -182,38 +198,43 @@
       <div class="bracket-game cont">
         <div class="player top olympus">
           <span class="team"></span>
-          <span class="participant">Lathika</span>
+          <span class="participant">Devis - Suraj</span>
         </div>
-        <div class="player bot heracles">
+        <div class="player bot">
           <span class="team"></span>
-          <span class="participant">Steni</span>
+          <span class="participant">---</span>
         </div>
       </div>
       <div class="bracket-game cont">
         <div class="player top heracles">
           <span class="team"></span>
-          <span class="participant">Arya</span>
+          <span class="participant">Prince - Dhaneesh </span>
         </div>
         <div class="player bot ">
+            <span class="team"></span>
           <span class="participant">---</span>
         </div>
       </div>
       <div class="bracket-game cont">
         <div class="player top spartans">
           <span class="team"></span>
-          <span class="participant">Chaythanya</span>
+          <span class="participant">Vysakh - Nidheesh T M</span>
         </div>
         <div class="player bot ">
+            <span class="team"></span>
           <span class="participant">---</span>
         </div>
       </div>
-      <div class="bracket-game cont">
-        <div class="player top kratos">
-          <span class="team"></span>
-          <span class="participant">Bonita</span>
-        </div>
-        <div class="player bot ">
-          <span class="participant">---</span>
+      <div class="bracket-game m-4">
+        <div class="connector">
+          <div class="player top ">
+            <span class="team"></span>
+            <span class="participant">---</span>
+          </div>
+          <div class="player bot ">
+            <span class="team"></span>
+            <span class="participant">---</span>
+          </div>
         </div>
       </div>
     </div>
@@ -222,43 +243,53 @@
 
   <div class="round r-1-right">
       <div class="bracket-game cont">
-        <div class="player top heracles won">
-          <span class="team"></span>
-          <span class="participant">Steni</span>
-        </div>
-        <div class="player bot kratos">
-          <span class="team"></span>
-          <span class="participant">Anupama</span>
-        </div>
-      </div>
-      <div class="bracket-game cont">
         <div class="player top spartans">
           <span class="team"></span>
-          <span class="participant">Niji</span>
+          <span class="participant">Anand Prem - Freddy</span>
         </div>
         <div class="player bot heracles">
           <span class="team"></span>
-          <span class="participant">Sneha</span>
+          <span class="participant">Shine - Ashwin</span>
         </div>
       </div>
       <div class="bracket-game cont">
         <div class="player top kratos">
           <span class="team"></span>
-          <span class="participant">Nitha</span>
+          <span class="participant">Pratheesh - Antony</span>
         </div>
         <div class="player bot spartans">
           <span class="team"></span>
-          <span class="participant">Amritha</span>
+          <span class="participant">Athul - Krishnadev</span>
         </div>
       </div>
       <div class="bracket-game cont">
-        <div class="player top heracles">
+        <div class="player top onlympus">
           <span class="team"></span>
-          <span class="participant">Gilsha</span>
+          <span class="participant">Amal VS - Prasad</span>
+        </div>
+        <div class="player bot heracles">
+          <span class="team"></span>
+          <span class="participant">Sanjay - Sajeesh</span>
+        </div>
+      </div>
+      <div class="bracket-game cont m-3">
+        <div class="player top kratos">
+          <span class="team"></span>
+          <span class="participant">Vinod - Murali</span>
         </div>
         <div class="player bot spartans">
           <span class="team"></span>
-          <span class="participant">Anisha</span>
+          <span class="participant">Gokul - Sarath</span>
+        </div>
+      </div>
+      <div class="bracket-game cont m-4">
+        <div class="player top heracles">
+          <span class="team"></span>
+          <span class="participant">Amith - Sugunan</span>
+        </div>
+        <div class="player bot olumpus">
+          <span class="team"></span>
+          <span class="participant">Babu - Arjun Raju</span>
         </div>
       </div>
     </div>
@@ -283,6 +314,12 @@ section {
 
 .round {
   margin-right: 35px;
+}
+.round.r-2-right .bracket-game.m-4 {
+  margin-top: 84px;
+}
+.round.r-3-right .bracket-game.m-2 {
+margin-top:150px;
 }
 .round.r-3-left,
 .round.r-3-right  {
@@ -331,7 +368,7 @@ section {
     -webkit-transform: translate(-100%, -50%);
     transform: translate(-100%, -50%);
 }
-.round.r-2-left .bracket-game:after {
+.round.r-2-left .bracket-game::after {
     width: 18px;
     height: 2px;
     right: 0;
@@ -339,8 +376,8 @@ section {
     transform: translate(100%, -50%);
 }
 
-.round.r-3-left .bracket-game:before,
-.round.r-4-left .bracket-game:before {
+.round.r-3-left .bracket-game::before,
+.round.r-4-left .bracket-game::before {
     width: 17px;
     height: 2px;
     left: 0;
@@ -348,8 +385,8 @@ section {
     transform: translate(-100%, -50%);
 }
 
-.round.r-3-left .bracket-game:after,
-.round.r-4-left .bracket-game:after {
+.round.r-3-left .bracket-game::after,
+.round.r-4-left .bracket-game::after {
     width: 2px;
     height: 86px;
     left: 0;
@@ -357,7 +394,7 @@ section {
     transform: translate(-19px, -50%);
 }
 
-.round.r-4-left .bracket-game:after {
+.round.r-4-left .bracket-game::after {
     height: 176px;
 }
 
@@ -369,16 +406,16 @@ section {
     transform: translate(-100%, -50%);
 }
 
-.round.r-2-right .bracket-game:after {
+.round.r-2-right .bracket-game::after {
     width: 18px;
     height: 2px;
-    left: 0;
     -webkit-transform: translate(-100%, -50%);
     transform: translate(-100%, -50%);
 }
 
-.round.r-3-right .bracket-game:before,
-.round.r-4-right .bracket-game:before {
+.round.r-2-right .bracket-game.m-4::before,
+.round.r-3-right .bracket-game::before,
+.round.r-4-right .bracket-game::before {
     width: 17px;
     height: 2px;
     right: 0;
@@ -386,8 +423,9 @@ section {
     transform: translate(100%, -50%);
 }
 
-.round.r-3-right .bracket-game:after,
-.round.r-4-right .bracket-game:after {
+.round.r-2-right .bracket-game.m-4::after,
+.round.r-3-right .bracket-game::after,
+.round.r-4-right .bracket-game::after {
     width: 2px;
     height: 86px;
     right: 0;
@@ -395,8 +433,9 @@ section {
     transform: translate(19px, -50%);
 }
 
-.round.r-4-right .bracket-game:after {
-    height: 176px;
+.round.r-4-right .bracket-game::after {
+    height: 196px;
+    margin-top: 11px;
 }
 
 .round.r-3-left .connector::after{
@@ -407,6 +446,7 @@ section {
     transform: translate(100%, -50%);
 }
 
+.round.r-2-right .connector::after,
 .round.r-3-right .connector::after {
     width: 18px;
     height: 2px;
@@ -422,8 +462,14 @@ section {
 .round.r-1-right{
     margin-right: 0;
 }
+.round.r-1-right .bracket-game.m-3::after,
+.round.r-1-right .bracket-game.m-4::after {
+  width: 18px;
+}
+.round.r-3-right .bracket-game.m-2::after {
+  height: 130px;
+}
 .bracket-game {
-  max-width: 125px;
   margin: 40px 0;
   position: relative;
 }

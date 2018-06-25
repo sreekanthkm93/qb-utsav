@@ -1,8 +1,8 @@
 <template>
-<div>
+<div >
 	<event-banner	 
 		title="Carroms" 
-		description = "A round of carrom ends when one player pockets all of his or her pieces, and the queen has been pocketed. You play rounds until one player has reached 29 points.">		
+		description = "Work hard, Play harder !">		
 	</event-banner>
 	<events-container 
 		:aboutEvent = "eventSnapshot"
