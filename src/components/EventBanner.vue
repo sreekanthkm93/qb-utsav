@@ -16,7 +16,7 @@
 
         </div>
       <div class="bg">
-        <img src="../assets/carroms.png" alt="carroms-bg">
+        <img src="../assets/carroms.jpg" alt="carroms-bg">
       </div>
     </section>
 </template>
@@ -87,6 +87,7 @@ text-transform: uppercase;
     right: 0px;
     bottom: 0px;
     z-index: -1;
+    background: #173694;
 }
 
 .bg img{

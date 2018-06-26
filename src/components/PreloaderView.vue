@@ -7,7 +7,7 @@
     </div>
     <div class="mobile-view">
       <div class="hero-text">
-        Movile version will be available soon!!
+        Mobile version will be available soon!!
       </div>
     </div>
   </section>
