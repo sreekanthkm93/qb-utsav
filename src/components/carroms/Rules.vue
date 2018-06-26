@@ -77,16 +77,19 @@ export default {
   color: #868fa9;
   margin-top:20px;
   margin-bottom: 50px;
+  font-family: Gilroy,sans-serif;
 }
 .rules h2 {
   font-size: 20px;
   font-weight: normal;
   color: #6565e0;
+  font-family: Gilroy,sans-serif;
 }
 
 .rules li {
   font-size: 16px;
   font-weight: 100;
+  font-family: Gilroy,sans-serif;
 }
 .rules .segment {
   margin-top: 50px;
@@ -96,5 +99,6 @@ export default {
   font-size: 16px;
   font-weight: 100;
   margin: 20px 0;
+  font-family: Gilroy,sans-serif;
 }
 </style>

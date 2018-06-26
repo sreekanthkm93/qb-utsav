@@ -6,8 +6,8 @@
                 <!-- <div class="col-xs-1" v-bind:class="{ active: events }" v-on:click = "clickEventTab('events')">EVENTS</div> -->
                 <div class="col-xs-2" v-bind:class="{ active: wom_sing }" v-on:click = "clickEventTab('wom_sing')">WOMENTS SINGLES</div>
                 <div class="col-xs-2" v-bind:class="{ active: men_sing }" v-on:click = "clickEventTab('men_sing')">MENS SINGLES</div>
-                <div class="col-xs-2" v-bind:class="{ active: wom_doub }" v-on:click = "clickEventTab('wom_doub')">WOMENTS DOUBLES</div>
-                <div class="col-xs-2" v-bind:class="{ active: men_doub }" v-on:click = "clickEventTab('men_doub')">MENTS DOUBLES</div>
+                <div class="col-xs-2" v-bind:class="{ active: wom_doub }" v-on:click = "clickEventTab('wom_doub')">WOMENS DOUBLES</div>
+                <div class="col-xs-2" v-bind:class="{ active: men_doub }" v-on:click = "clickEventTab('men_doub')">MENS DOUBLES</div>
                 <div class="col-xs-2" v-bind:class="{ active: mix_doub }" v-on:click = "clickEventTab('mix_doub')">MIXED DOUBLES</div>
                 <div class="col-xs-2" v-bind:class="{ active: rules }" v-on:click = "clickEventTab('rules')">RULES</div>
             </div>
@@ -104,20 +104,19 @@ section{
 }
 .container-header {
   background: #191d23;
-  color: #464646;
+  color: #737373;
   width: 100%;
   float: left;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
   cursor: pointer;
+  font-family: Gilroy,sans-serif;
 }
 .container-header .active {
-  color: #1a45d2;
-  /* font-weight: bold; */
+  color: #3b64ea;  
 }
 .container-body {
-  /* background: #000017; */
   width: 100%;
 }
 .about-event-footer {
