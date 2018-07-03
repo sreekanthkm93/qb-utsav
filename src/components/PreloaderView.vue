@@ -31,7 +31,7 @@
 .mobile-view {
   display: none;
 }
-@media (pointer:coarse) {
+@media (max-width:961px) {
   .mobile-view {
     background: #000018;
     bottom: 0;
@@ -80,7 +80,7 @@
     z-index: 10000;
   }
 
- 
+
 
   @-webkit-keyframes spinner {
     0% {

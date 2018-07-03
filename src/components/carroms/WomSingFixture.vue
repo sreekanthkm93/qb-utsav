@@ -103,7 +103,7 @@
           <span class="team"></span>
           <span class="participant">Ruby</span>
         </div>
-        <div class="player bot olympus">
+        <div class="player bot olympus won">
           <span class="team"></span>
           <span class="participant">Tinu</span>
         </div>
@@ -127,12 +127,13 @@
       </div>
       <div class="bracket-game cont">
         <div class="connector">
-          <div class="player top ">
+          <div class="player top spartans">
             <span class="team"></span>
-            <span class="participant">---</span>
+            <span class="participant">Pooja</span>
           </div>
-          <div class="player bot ">
-            <span class="participant">---</span>
+          <div class="player bot olympus">
+            <span class="team"></span>
+            <span class="participant">Tinu</span>
           </div>
         </div>
       </div>
@@ -193,17 +194,17 @@
             <span class="team"></span>
             <span class="participant">Steni</span>
           </div>
-          <div class="player bot ">
+          <div class="player top heracles">
             <span class="team"></span>
-            <span class="participant">---</span>
+            <span class="participant">Arya</span>
           </div>
         </div>
       </div>
       <div class="bracket-game cont">
         <div class="connector">
-          <div class="player top">
+          <div class="player top spartans">
             <span class="team"></span>
-            <span class="participant">---</span>
+            <span class="participant">Chaythanya</span>
           </div>
           <div class="player bot">
             <span class="team"></span>
@@ -226,17 +227,17 @@
         </div>
       </div>
       <div class="bracket-game cont">
-        <div class="player top heracles">
+        <div class="player top heracles won">
           <span class="team"></span>
           <span class="participant">Arya</span>
         </div>
-        <div class="player bot ">
+        <div class="player top spartans">
           <span class="team"></span>
-          <span class="participant">---</span>
+          <span class="participant">Niji</span>
         </div>
       </div>
       <div class="bracket-game cont">
-        <div class="player top spartans">
+        <div class="player top spartans won">
           <span class="team"></span>
           <span class="participant">Chaythanya</span>
         </div>
@@ -271,7 +272,7 @@
         </div>
       </div>
       <div class="bracket-game cont">
-        <div class="player top spartans">
+        <div class="player top spartans won">
           <span class="team"></span>
           <span class="participant">Niji</span>
         </div>

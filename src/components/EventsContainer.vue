@@ -4,7 +4,7 @@
         <div class="container text-left">
             <div class="row" >
                 <!-- <div class="col-xs-1" v-bind:class="{ active: events }" v-on:click = "clickEventTab('events')">EVENTS</div> -->
-                <div class="col-xs-2" v-bind:class="{ active: wom_sing }" v-on:click = "clickEventTab('wom_sing')">WOMENTS SINGLES</div>
+                <div class="col-xs-2" v-bind:class="{ active: wom_sing }" v-on:click = "clickEventTab('wom_sing')">WOMENS SINGLES</div>
                 <div class="col-xs-2" v-bind:class="{ active: men_sing }" v-on:click = "clickEventTab('men_sing')">MENS SINGLES</div>
                 <div class="col-xs-2" v-bind:class="{ active: wom_doub }" v-on:click = "clickEventTab('wom_doub')">WOMENS DOUBLES</div>
                 <div class="col-xs-2" v-bind:class="{ active: men_doub }" v-on:click = "clickEventTab('men_doub')">MENS DOUBLES</div>

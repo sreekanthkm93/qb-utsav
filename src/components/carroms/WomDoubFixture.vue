@@ -126,9 +126,9 @@
           <span class="team"></span>
           <span class="participant">Lathika - Sreeshma</span>
         </div>
-        <div class="player bot heracles">
+        <div class="player bot ">
           <span class="team"></span>
-          <span class="participant">Steni</span>
+          <span class="participant">---</span>
         </div>
       </div>
       <div class="bracket-game cont">
