@@ -1,9 +1,16 @@
 <template>
-  <div class="preloader">
-    <div class="status">
-      <div class="status-mes"></div>
+  <section>
+    <div class="preloader">
+      <div class="status">
+        <div class="status-mes"></div>
+      </div>
     </div>
-  </div>
+    <div class="mobile-view">
+      <div class="hero-text">
+        Mobile version will be available soon!!
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -20,6 +27,30 @@
 </script>
 
 <style scoped>
+
+.mobile-view {
+  display: none;
+}
+@media (max-width:961px) {
+  .mobile-view {
+    background: #000018;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+    display: block;
+  }
+
+   .hero-text{
+    color: rgb(61, 91, 169);
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    margin-top: 100px;
+  }
+}
   .preloader {
     background: #fff;
     bottom: 0;
@@ -48,6 +79,8 @@
     animation: spinner 700ms infinite linear;
     z-index: 10000;
   }
+
+
 
   @-webkit-keyframes spinner {
     0% {

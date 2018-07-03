@@ -2,7 +2,7 @@
 <div >
 	<event-banner	 
 		title="Carroms" 
-		description = "Work hard, Play harder !">		
+		description = "">		
 	</event-banner>
 	<events-container 
 		:aboutEvent = "eventSnapshot"

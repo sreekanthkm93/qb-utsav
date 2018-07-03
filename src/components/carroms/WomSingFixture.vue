@@ -1,5 +1,27 @@
 <template>
   <section>
+    <div class="container teams">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="team-wrapper spartans">
+            <span class="team-color"></span>
+            <span class="name">Spartans</span>
+          </div>
+          <div class="team-wrapper heracles">
+            <span class="team-color"></span>
+            <span class="name">Heracles</span>
+          </div>
+          <div class="team-wrapper olympus">
+            <span class="team-color"></span>
+            <span class="name">Olympus</span>
+          </div>
+          <div class="team-wrapper kratos">
+            <span class="team-color"></span>
+            <span class="name">Kratos</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="round r-1-left">
       <div class="bracket-game">
         <div class="player top kratos">
@@ -81,7 +103,7 @@
           <span class="team"></span>
           <span class="participant">Ruby</span>
         </div>
-        <div class="player bot olympus">
+        <div class="player bot olympus won">
           <span class="team"></span>
           <span class="participant">Tinu</span>
         </div>
@@ -105,12 +127,13 @@
       </div>
       <div class="bracket-game cont">
         <div class="connector">
-          <div class="player top ">
+          <div class="player top spartans">
             <span class="team"></span>
-            <span class="participant">---</span>
+            <span class="participant">Pooja</span>
           </div>
-          <div class="player bot ">
-            <span class="participant">---</span>
+          <div class="player bot olympus">
+            <span class="team"></span>
+            <span class="participant">Tinu</span>
           </div>
         </div>
       </div>
@@ -167,21 +190,21 @@
     <div class="round r-3-right">
       <div class="bracket-game">
         <div class="connector">
-          <div class="player top">
+          <div class="player top heracles">
             <span class="team"></span>
-            <span class="participant">---</span>
+            <span class="participant">Steni</span>
           </div>
-          <div class="player bot ">
+          <div class="player top heracles">
             <span class="team"></span>
-            <span class="participant">---</span>
+            <span class="participant">Arya</span>
           </div>
         </div>
       </div>
       <div class="bracket-game cont">
         <div class="connector">
-          <div class="player top">
+          <div class="player top spartans">
             <span class="team"></span>
-            <span class="participant">---</span>
+            <span class="participant">Chaythanya</span>
           </div>
           <div class="player bot">
             <span class="team"></span>
@@ -198,23 +221,23 @@
           <span class="team"></span>
           <span class="participant">Lathika</span>
         </div>
-        <div class="player bot heracles">
+        <div class="player bot heracles won">
           <span class="team"></span>
           <span class="participant">Steni</span>
         </div>
       </div>
       <div class="bracket-game cont">
-        <div class="player top heracles">
+        <div class="player top heracles won">
           <span class="team"></span>
           <span class="participant">Arya</span>
         </div>
-        <div class="player bot ">
+        <div class="player top spartans">
           <span class="team"></span>
-          <span class="participant">---</span>
+          <span class="participant">Niji</span>
         </div>
       </div>
       <div class="bracket-game cont">
-        <div class="player top spartans">
+        <div class="player top spartans won">
           <span class="team"></span>
           <span class="participant">Chaythanya</span>
         </div>
@@ -249,7 +272,7 @@
         </div>
       </div>
       <div class="bracket-game cont">
-        <div class="player top spartans">
+        <div class="player top spartans won">
           <span class="team"></span>
           <span class="participant">Niji</span>
         </div>
@@ -473,7 +496,7 @@ section {
 }
 
 .team{
-    width: 4px;
+    width: 2px;
     height: 23px;
     float: left;
     display: inline-block;
@@ -484,6 +507,7 @@ section {
   padding-right: 10px;
   font-size: 16px;
   font-weight: 100;
+  font-family: Gilroy,sans-serif;
 }
 
 .player.won .participant{
@@ -511,23 +535,23 @@ section {
 }
 
 .kratos.top .team  {
-  background: #115a92;
+  background: #4c6b00;
   border-radius: 3px 0 0 0;
 }
 
 .kratos.bot .team  {
-  background: #115a92;
+  background: #4c6b00;
   border-radius: 0 0 0 3px;
 }
 
 
 .heracles.top .team  {
-  background: #4c6b00;
+  background: #115a92;
   border-radius: 3px 0 0 0;
 }
 
 .heracles.bot .team  {
-  background: #4c6b00;
+  background: #115a92;
   border-radius: 0 0 0 3px;
 }
 
@@ -535,4 +559,46 @@ section {
   margin-top: 48px;
   color: #ccc;
 }
+
+.teams {
+  margin-top:20px;
+}
+
+.team-wrapper {
+  float: left;
+  padding-right: 18px;
+}
+
+.team-wrapper .team-color {
+    width: 4px;
+    height: 14px;
+    float: left;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.team-wrapper .name {
+  padding: 0 6px;
+  font-family:  Gilroy,sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  color: #8989a5;
+}
+
+.team-wrapper.spartans .team-color {
+  background: #9e0606;
+}
+
+.team-wrapper.heracles .team-color {
+  background: #115a92;
+}
+
+.team-wrapper.olympus .team-color {
+  background: #5500a2;
+}
+
+.team-wrapper.kratos .team-color {
+  background: #4c6b00;
+}
+
 </style>
