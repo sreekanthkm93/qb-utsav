@@ -242,7 +242,7 @@
       </div>
       <div class="bracket-game cont">
         <div class="connector">
-          <div class="player top spartans">
+          <div class="player top spartans won">
             <span class="team"></span>
             <span class="participant">Rahul</span>
           </div>
@@ -274,9 +274,9 @@
             <span class="team"></span>
             <span class="participant">Murali</span>
           </div>
-          <div class="player bot ">
+          <div class="player bot spartans">
             <span class="team"></span>
-          <span class="participant">---</span>
+          <span class="participant">Rahul</span>
           </div>
         </div>
       </div>
@@ -349,9 +349,9 @@
       </div>
       <div class="bracket-game">
         <div class="connector">
-          <div class="player top ">
+          <div class="player top heracles">
             <span class="team"></span>
-            <span class="participant">---</span>
+            <span class="participant">Prince</span>
           </div>
           <div class="player bot ">
             <span class="team"></span>
@@ -401,7 +401,7 @@
       </div>
       <div class="bracket-game cont">
         <div class="connector">
-          <div class="player top heracles">
+          <div class="player top heracles won">
             <span class="team"></span>
             <span class="participant">Prince</span>
           </div>

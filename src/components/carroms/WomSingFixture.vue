@@ -28,7 +28,7 @@
           <span class="team"></span>
           <span class="participant">Priya</span>
         </div>
-        <div class="player bot heracles">
+        <div class="player bot heracles won">
           <span class="team"></span>
           <span class="participant">Ponni</span>
         </div>
@@ -74,7 +74,7 @@
             <span class="participant">Sreeshma</span>
           </div>
           <div class="player bot ">
-            <span class="participant">---</span>
+            <span class="participant">Ponni</span>
           </div>
 
       </div>
@@ -83,7 +83,7 @@
           <span class="team"></span>
           <span class="participant">Amrutha</span>
         </div>
-        <div class="player bot spartans">
+        <div class="player bot spartans won">
           <span class="team"></span>
           <span class="participant">Archana</span>
         </div>
@@ -115,9 +115,9 @@
     <div class="round r-3-left">
       <div class="bracket-game">
         <div class="connector">
-          <div class="player top ">
+          <div class="player top spartans">
             <span class="team"></span>
-            <span class="participant">---</span>
+            <span class="participant">Archana</span>
           </div>
           <div class="player bot ">
             <span class="team"></span>
