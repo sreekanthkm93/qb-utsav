@@ -1,4 +1,4 @@
-<<template>
+<template>
   <section class="feedback-el">
       <div class="container">
           <div class="row">
@@ -33,51 +33,32 @@
           <div class="row">
               <div class="col-md-3"></div>
               <div class="col-md-6">
-                    <div class="feedback-btn-wrapper">
-                        <button type="button" class="btn btn-feedback">feedbacks & suggestions</button>
-                    </div>
-                    <!-- <div class="feedback-from">
-                      <form>
-                          <div class="form-group title">
-                          <label>FEEDBACKS & SUGGESTIONS</label>
-                          </div>
-                          <div class="form-group">
-                              <input type="email" class="form-control email" id="exampleInputEmail1" placeholder="EMAIL">
-                          </div>
-                          <div class="form-group">
-                              <textarea class="form-control" rows="12" placeholder="MESSAGE"></textarea>
-                          </div>
-                      </form>
-                    </div> -->
+                    Clap
               </div>
               <div class="col-md-3"></div>
           </div>
           <div class="row">
               <div class="col-md-3"></div>
               <div class="col-md-6">
-                    <div class="feedback-btn-wrapper">
-                        <button type="button" class="btn btn-feedback">feedbacks & suggestions</button>
-                    </div>
-                    <!-- <div class="feedback-from">
-                      <form>
-                          <div class="form-group title">
-                          <label>FEEDBACKS & SUGGESTIONS</label>
-                          </div>
-                          <div class="form-group">
-                              <input type="email" class="form-control email" id="exampleInputEmail1" placeholder="EMAIL">
-                          </div>
-                          <div class="form-group">
-                              <textarea class="form-control" rows="12" placeholder="MESSAGE"></textarea>
-                          </div>
-                      </form>
-                    </div> -->
+                <p class="footer-top">
+                    Just as the prophecies foretold, QBUtsav is a collaborative funhouse built of QBurst koratty — surfing the void, hammering away at a Commodore 64 keyboard with their meaty stumps. These dubious machinations are but the harvest of their unholy union.
+                </p>
+              </div>
+              <div class="col-md-3"></div>
+          </div>
+          <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <p class="footer-bottom">
+                  made with love at koratty © 2018 QBurst Utsav TCC
+                </p>
               </div>
               <div class="col-md-3"></div>
           </div>
       </div>
   </section>
 </template>
-<<script>
+<script>
 export default {
   name: 'FeedbackForm'
 }
@@ -86,7 +67,7 @@ export default {
 .feedback-el {
     background: #000017;
     background-image:url('../assets/pattern.png');
-    padding: 65px 0;
+    padding-top: 125px;
 }
 .feedback-el .hero-text {
     font-family: 'Gilroy';
@@ -136,5 +117,23 @@ export default {
   font-family: 'Gilroy';
   font-size: 12px;
   font-weight: bold;
+}
+
+.footer-top {
+  margin-top: 50px;
+  font-family: 'Gilroy';
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(113, 113, 115, 1);
+  text-align: center;
+}
+
+.footer-bottom {
+  margin-top: 112px;
+  padding-bottom:28px;
+  font-family: 'Gilroy';
+  font-size: 14px;
+  color: rgba(149, 149, 149, 1);
+  text-align: center;
 }
 </style>

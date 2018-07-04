@@ -3,8 +3,9 @@
   <home-banner/>
   <about-qbu :sample="sampleData" />
   <teams-of-qbu/>
-  <home-event-list/>>
+  <home-event-list/>
   <!-- <events-slider/> -->
+  <testimonials/>
   <feedback-form/>
 </div>
 </template>
@@ -16,6 +17,7 @@
   import AboutQbu from '../components/AboutQbu';
   import TeamsOfQbu from '../components/TeamsOfQbu';
   import HomeEventList from '../components/HomeEventList';
+  import Testimonials from '../components/Testimonials';
 
   export default {
     name: 'Home',
@@ -25,7 +27,8 @@
       TeamsOfQbu,
       HomeEventList,
       EventsSlider,
-      FeedbackForm
+      FeedbackForm,
+      Testimonials
     },
     data() {
       return {

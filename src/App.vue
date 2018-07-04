@@ -3,7 +3,7 @@
   <preloader-view/>
   <header-view/>
   <router-view/>
-  <footer-view/>
+  <!-- <footer-view/> -->
 </div>
 </template>
 
