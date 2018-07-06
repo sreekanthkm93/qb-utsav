@@ -6,9 +6,9 @@
                 <!-- <div class="col-xs-1" v-bind:class="{ active: events }" v-on:click = "clickEventTab('events')">EVENTS</div> -->
                 <div class="col-xs-2" v-bind:class="{ active: wom_sing }" v-on:click = "clickEventTab('wom_sing')">WOMENS SINGLES</div>
                 <div class="col-xs-2" v-bind:class="{ active: men_sing }" v-on:click = "clickEventTab('men_sing')">MENS SINGLES</div>
-                <div class="col-xs-2" v-bind:class="{ active: wom_doub }" v-on:click = "clickEventTab('wom_doub')">WOMENS DOUBLES</div>
-                <div class="col-xs-2" v-bind:class="{ active: men_doub }" v-on:click = "clickEventTab('men_doub')">MENS DOUBLES</div>
-                <div class="col-xs-2" v-bind:class="{ active: mix_doub }" v-on:click = "clickEventTab('mix_doub')">MIXED DOUBLES</div>
+                <!-- <div class="col-xs-2" v-bind:class="{ active: wom_doub }" v-on:click = "clickEventTab('wom_doub')">WOMENS DOUBLES</div>
+                <div class="col-xs-2" v-bind:class="{ active: men_doub }" v-on:click = "clickEventTab('men_doub')">MENS DOUBLES</div> -->
+                <!-- <div class="col-xs-2" v-bind:class="{ active: mix_doub }" v-on:click = "clickEventTab('mix_doub')">MIXED DOUBLES</div> -->
                 <div class="col-xs-2" v-bind:class="{ active: rules }" v-on:click = "clickEventTab('rules')">RULES</div>
             </div>
         </div>
@@ -106,7 +106,6 @@ section{
   background: #191d23;
   color: #737373;
   width: 100%;
-  float: left;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
@@ -114,7 +113,7 @@ section{
   font-family: Gilroy,sans-serif;
 }
 .container-header .active {
-  color: #3b64ea;  
+  color: #3b64ea;
 }
 .container-body {
   width: 100%;
@@ -125,11 +124,5 @@ section{
   float: left;
 }
 
-.fixture-container {
-  min-height: 90vh;
-  margin-right: auto;
-  margin-left: auto;
-  display: table;
-  content: " ";
-}
+
 </style>
